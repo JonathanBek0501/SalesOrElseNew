@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'FuturaRound';
+    src: url('../fonts/FuturaRound.ttf');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'FuturaRound';
+    src: url('../fonts/FuturaRoundDemi.ttf');
+    font-display: swap;
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'FuturaRound';
+    src: url('../fonts/FuturaRoundBold.ttf');
+    font-display: swap;
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'IBMPlexMono';
+    src: url('../fonts/IBMPlexMono-Regular.ttf');
+    font-display: swap;
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('../fonts/Inter-Bold.ttf');
+    font-display: swap;
+    font-weight: 700;
+}
+
+html {
+    @apply scroll-smooth
+}
+
+body {
+    @apply font-plexMono overflow-x-hidden
+}
