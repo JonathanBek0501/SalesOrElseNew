@@ -90,6 +90,7 @@ const scrollToBooking = () => {
   if (bookSection) {
     const targetPosition = bookSection.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
+    menuOpen.value = false;
   }
 };
 </script>
