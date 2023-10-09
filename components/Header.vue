@@ -74,11 +74,14 @@ const links = ref([
     },
 ])
 
+const menuOpen = ref(false)
+
 const scrollToSection = (target) => {
   const targetSection = document.querySelector(target);
   if (targetSection) {
     const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
+    menuOpen.value = false;
   }
 };
 
@@ -89,6 +92,4 @@ const scrollToBooking = () => {
     window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
   }
 };
-
-const menuOpen = ref(false)
 </script>
