@@ -68,7 +68,7 @@ const services = ref([
         imgWidth: '124',
         imgHeight: '96',
         title: 'Landing Pages That Sell On The First Click',
-        text: "Our PROVEN landing page formula converts up to 10% of FIRST time visitors.",
+        text: "Our PROVEN landing page formula converts up to 15% of FIRST time visitors.",
         links: ref([
             {
                 title: 'Landing Page Builds Start At $4,995',

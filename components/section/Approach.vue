@@ -100,15 +100,15 @@ const steps = ref([
         alt: 'Shopify statistics',
         width: '852',
         height: '248',
-        subTitle: 'Many Of Our Clients Are Ranked As The Top \nConverting Stores In Their Niche By SHOPIFY \nThemselves.'
+        subTitle: 'All Of Our Clients Are Ranked As The Top Converting Stores In Their Niche By SHOPIFY'
     },
     {
         content: 'Step3EmailSms.png',
         title: 'Maximizing LTV',
         points: ref([
-            "One your consumer has converted for the first time, your job is to maximize the Lifetime Value metric.",
+            "Once you convert a customer for the first time, your job is to maximize the Lifetime Value metric.",
             'Our Email and SMS strategy ensures your buyers will come back again and again through campaigns and automated flows... building you a fortune on the "backend"!',
-            "Enjoy Open Rates of as high as 50%, CTRs of 3% and Conversion Rates of 1%+ in ALL your campaigns!",
+            "Enjoy Open Rates of as high as 50%, CTRs of 3% and Conversion Rates of 1%+ in ALL of your campaigns! (ADDED OF IN BOLD JUST TO POINT OUT, SHOULDN'T BE BOLD IN THE SITE)",
         ]),
         img: 'step-3',
         imgMobile: 'step-3.svg',

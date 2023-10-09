@@ -53,7 +53,11 @@
             </h2>
 
             <p class="text-lg text-brand-gray pt-8 md:pt-5">
-                If you're tired of paying hefty monthly retainers in exchange for no sales, high ad spend and EXCUSES month after you’ve come to the right place.
+                If you're tired of paying hefty monthly retainers, and bleeding cash on ads,
+                <br>
+                In exchange for NO sales, high acquisition costs and EXCUSES month after month...
+                <br>
+                Then you’ve come to the right place.
             </p>
         </div>
     </div>

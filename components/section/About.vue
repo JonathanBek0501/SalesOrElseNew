@@ -15,7 +15,7 @@
                 <div class="lg:max-w-xl">
                     <div class="pb-20">
                         <h3 class="text-4xl-mobile md:text-[40px] md:leading-[52px] font-futuraRound font-bold pb-4">
-                            Hi there. My name is Juan, and this is why you should trust me with your landing pages and paid media.
+                            Hi there. My name is Juan, and this is why you should trust me with your DTC strategy.
                         </h3>
 
                         <ul class="space-y-6 text-lg pr-2">
@@ -73,7 +73,7 @@
                     </div>
                 </div>
 
-                <h4 class="font-futuraRound font-bold capitalize text-brand2xl pt-3">
+                <h4 class="font-futuraRound font-bold text-brand2xl pt-3">
                     Since no “NDA” prevents me from sharing this past success – I’m upfront and transparent about whom I work with. 
                     <br>
                     <br>

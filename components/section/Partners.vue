@@ -9,7 +9,7 @@
         <div class="space-y-10">
             <div v-for="(partner, index) in partners" :key="index" class="border-[1.5px] rounded border-black font-futuraRound p-6 sm:p-10 md:py-14 md:px-11">
                 <div class="relative flex flex-col items-center gap-4">
-                    <h4 :class="{'max-w-4xl mx-auto': index === 3}" class="font-futuraRound font-bold text-xl md:text-[27px] md:leading-9 text-center capitalize whitespace-pre-wrap">
+                    <h4 :class="{'max-w-4xl mx-auto': index === 3}" class="font-futuraRound font-bold text-xl md:text-[27px] md:leading-9 text-center whitespace-pre-wrap">
                         {{ partner.text }}
                     </h4>
 
@@ -52,7 +52,7 @@
 <script setup>
 const partners = ref([
     {
-        text: "Juan is an amazing marketer who knows how to get results. I'd recommend him to any CPG or consumer brand who is looking to improve their marketing and get more sales. \ntestimonial",
+        text: "Juan is an amazing marketer who knows how to get results. I'd recommend him to any CPG or consumer brand who is looking to improve their marketing and get more sales. \nTestimonial",
         img: 'partner1',
         fullName: 'Brad Baum',
         job: 'Co-founder at Llama Naturals'
