@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-base mx-auto space-y-16 p-2.5 mt-36 mb-8">
+    <div id="reviews" class="max-w-base mx-auto space-y-16 p-2.5 mt-36 mb-8">
         <h2 class="text-4xl-mobile md:text-4xl font-futuraRound text-center font-bold">
             What
             <span class="text-primary">Our Partners</span>

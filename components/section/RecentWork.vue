@@ -1,5 +1,5 @@
 <template>
-    <div class="pb-32">
+    <div id="caseStudies" class="pb-32">
         <h2 class="text-4xl-mobile md:text-4xl font-futuraRound text-center font-bold px-2.5">
             <span class="text-primary">Recent work</span>
             I'm proud of
@@ -182,9 +182,19 @@
         </div>
 
         <div class="w-full flex justify-center p-2.5">
-            <a href="#book" class="inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
+            <a @click.prevent="scrollToPricing" href="#book" class="inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
                 Book A Free Strategy Session
             </a>
         </div>
     </div>
 </template>
+
+<script setup>
+const scrollToPricing = () => {
+  const pricingSection = document.getElementById('book');
+  if (pricingSection) {
+    const targetPosition = pricingSection.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
+  }
+};
+</script>

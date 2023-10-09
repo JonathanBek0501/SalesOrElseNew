@@ -14,6 +14,7 @@
                 <a
                 v-for="(link, index) in links" :key="index" :href="link.goTo"
                 :class="{'text-primary-light': index === 4}"
+                @click.prevent="scrollToSection(link.goTo)"
                 class="px-4"
                 >
                     {{ link.title }}
@@ -39,7 +40,7 @@
         <div v-if="menuOpen" class="md:hidden absolute top-full right-0 w-full bg-white z-10">
             <nav class="divide-y">
                 <a
-                v-for="(link, index) in links" :key="index" :href="link.goTo"
+                v-for="(link, index) in links" :key="index" :href="link.goTo" @click.prevent="scrollToSection(link.goTo)"
                 class="block transition-all ease-in-out hover:bg-primary-light hover:text-white py-2.5 px-5">
                     {{ link.title }}
                 </a>
@@ -52,7 +53,7 @@
 const links = ref([
     {
         title: 'Case Studies',
-        goTo: '/'
+        goTo: '#caseStudies'
     },
     {
         title: 'About',
@@ -60,13 +61,21 @@ const links = ref([
     },
     {
         title: 'Reviews',
-        goTo: '#services'
+        goTo: '#reviews'
     },
     {
         title: 'Pricing',
         goTo: '#pricing'
     },
 ])
+
+const scrollToSection = (target) => {
+  const targetSection = document.querySelector(target);
+  if (targetSection) {
+    const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
+  }
+};
 
 const menuOpen = ref(false)
 </script>

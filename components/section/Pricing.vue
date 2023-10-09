@@ -1,5 +1,5 @@
 <template>
-    <div id="services" class="bg-black pt-12 md:pt-20 pb-12">
+    <div id="pricing" class="bg-black pt-12 md:pt-20 pb-12">
         <div class="max-w-4xl mx-auto px-[3px]">
             <h2 class="text-4xl text-center text-white font-futuraRound font-bold pb-10 md:pb-16">
                 Pricing
