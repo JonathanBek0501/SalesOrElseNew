@@ -20,7 +20,7 @@
                     {{ link.title }}
                 </a>
 
-                <a href="#book" class="uppercase inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
+                <a @click.prevent="scrollToBooking" href="#book" class="uppercase inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
                     free strategy session
                 </a>
             </div>
@@ -43,6 +43,11 @@
                 v-for="(link, index) in links" :key="index" :href="link.goTo" @click.prevent="scrollToSection(link.goTo)"
                 class="block transition-all ease-in-out hover:bg-primary-light hover:text-white py-2.5 px-5">
                     {{ link.title }}
+                </a>
+
+                <a @click.prevent="scrollToBooking" href="#book"
+                class="block transition-all ease-in-out text-primary-light hover:bg-primary-light hover:text-white py-2.5 px-5">
+                    Free Strategy Session
                 </a>
             </nav>
         </div>
@@ -73,6 +78,14 @@ const scrollToSection = (target) => {
   const targetSection = document.querySelector(target);
   if (targetSection) {
     const targetPosition = targetSection.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
+  }
+};
+
+const scrollToBooking = () => {
+  const bookSection = document.getElementById('book');
+  if (bookSection) {
+    const targetPosition = bookSection.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
   }
 };

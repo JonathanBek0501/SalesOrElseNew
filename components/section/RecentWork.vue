@@ -182,7 +182,7 @@
         </div>
 
         <div class="w-full flex justify-center p-2.5">
-            <a @click.prevent="scrollToPricing" href="#book" class="inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
+            <a @click.prevent="scrollToBooking" href="#book" class="inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
                 Book A Free Strategy Session
             </a>
         </div>
@@ -190,10 +190,10 @@
 </template>
 
 <script setup>
-const scrollToPricing = () => {
-  const pricingSection = document.getElementById('book');
-  if (pricingSection) {
-    const targetPosition = pricingSection.getBoundingClientRect().top + window.scrollY;
+const scrollToBooking = () => {
+  const bookSection = document.getElementById('book');
+  if (bookSection) {
+    const targetPosition = bookSection.getBoundingClientRect().top + window.scrollY;
     window.scrollTo({ top: targetPosition - 100, behavior: 'smooth' });
   }
 };
