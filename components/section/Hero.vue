@@ -1,5 +1,5 @@
 <template>
-    <div class="bg-black">
+    <div class="bg-black pt-32">
         <div class="max-w-base mx-auto text-white pt-10 md:pt-15 pb-10 md:pb-25 px-2.5 lg:px-0">
             <h1 class="max-w-4xl text-5xl-mobile md:text-5xl text-center md:text-left font-bold font-futuraRound lg:pr-6 pb-10 md:pb-6">
                 We Grow CPG Brands From $0 to Over 8 Figures In Online Sales

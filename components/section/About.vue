@@ -1,7 +1,7 @@
 <template>
     <div class="bg-black text-white pt-36 pb-40">
         <div class="max-w-base mx-auto flex flex-col lg:flex-row gap-14 lg:gap-24 px-2.5">
-            <div class="max-w-[380px] mx-auto lg:mx-0 w-full h-fit shrink-0 lg:sticky lg:top-5">
+            <div class="max-w-[380px] mx-auto lg:mx-0 w-full h-fit shrink-0 lg:sticky lg:top-28">
                 <nuxt-img
                     src="/Juan.png"
                     alt="Juan Personal Photo"

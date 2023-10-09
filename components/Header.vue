@@ -1,6 +1,6 @@
 <template>
-    <div class="relative bg-black">
-        <div class="flex items-center justify-between max-w-[1352px] mx-auto px-5 pt-10 pb-4">
+    <div class="fixed bg-white w-full z-50">
+        <div class="flex items-center justify-between max-w-[1352px] mx-auto px-5 py-4">
             <nuxt-link to="/">
                 <nuxt-img
                     src="/logo.svg"
@@ -17,6 +17,10 @@
                 class="px-4"
                 >
                     {{ link.title }}
+                </a>
+
+                <a href="#book" class="uppercase inline-block rounded-full leading-none text-white bg-primary-light border border-transparent transition-all ease-in-out hover:border-primary-light hover:text-black hover:bg-white px-8 py-4">
+                    free strategy session
                 </a>
             </div>
 
@@ -36,8 +40,7 @@
             <nav class="divide-y">
                 <a
                 v-for="(link, index) in links" :key="index" :href="link.goTo"
-                :class="{'text-primary-light': index === 4}"
-                class="block py-2.5 px-5">
+                class="block transition-all ease-in-out hover:bg-primary-light hover:text-white py-2.5 px-5">
                     {{ link.title }}
                 </a>
             </nav>
@@ -48,7 +51,7 @@
 <script setup>
 const links = ref([
     {
-        title: 'Home',
+        title: 'Case Studies',
         goTo: '/'
     },
     {
@@ -56,16 +59,12 @@ const links = ref([
         goTo: '#about'
     },
     {
-        title: 'Services',
+        title: 'Reviews',
         goTo: '#services'
     },
     {
-        title: 'Team',
-        goTo: 'https://www.linkedin.com/in/juan-alou/'
-    },
-    {
-        title: 'Book A Free Strategy Session',
-        goTo: '#book'
+        title: 'Pricing',
+        goTo: '#pricing'
     },
 ])
 
