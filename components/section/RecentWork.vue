@@ -2,6 +2,7 @@
     <div id="caseStudies" class="pb-32">
         <h2 class="text-4xl-mobile md:text-4xl font-futuraRound text-center font-bold px-2.5">
             <span class="text-primary">Recent work</span>
+            <br class="sm:hidden">
             I'm proud of
         </h2>
 
